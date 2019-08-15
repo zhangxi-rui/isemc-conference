@@ -10,7 +10,14 @@
             <p>Notification of Acceptance: {{Acceptance}} </p>
             <p>Camera-Ready Manuscript Deadline: {{ManuscriptDeadline}} </p>
             <p class="contentTitle paddingbot">All submissions must be in electronic, PDF or WORD style. </p>   
-            <p>Please click here to download the <a href="" id="paperTemplate" title="paper template" v-on:click="getDownloadUrl">paper template.</a></p>               
+            <p>Please click here to download the 
+              <a href="" id="paperTemplateHigh" title="high version paper template" v-on:click="getDownloadUrlHigh">high version 
+              </a>
+              <span>/</span>
+              <a href="" id="paperTemplateLow" title="low version paper template" v-on:click="getDownloadUrlLow"> low version 
+              </a>
+              paper template.
+            </p>               
           </div> 
           <div class="right">
               <p class="contribute">submission</p>
@@ -104,10 +111,10 @@ export default {
     
   },
   methods: { 
-    getDownloadUrl(){
+    getDownloadUrlHigh(){
       var self=this;
       this.downloadUrl=this.GLOBAL.globalurl+'/api/paper/template';
-      $("#paperTemplate").attr("href",self.downloadUrl);
+      $("#paperTemplateHigh").attr("href",self.downloadUrl);
     } 
   } 
 }

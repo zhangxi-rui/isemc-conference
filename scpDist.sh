@@ -1,0 +1,1 @@
+scp -r dist ubuntu@211.159.161.191:/home/ubuntu/conference-web

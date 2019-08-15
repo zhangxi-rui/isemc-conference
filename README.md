@@ -12,7 +12,7 @@ npm run dev
 ./src/components/page
 
 #### 页面出口index
-./pages/index/index.js
+./src/pages/index/index.js
 
 #### 路由配置
-./pages/router/index.js
+./src/pages/router/index.js
